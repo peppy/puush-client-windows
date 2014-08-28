@@ -1,0 +1,329 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DAB92AE6-F7B2-4598-BF99-CB825B579EB3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>puush</RootNamespace>
+    <AssemblyName>puush</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>
+    </DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>iconbundle.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ContextMenuHandler.cs" />
+    <Compile Include="DockedPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DockedPanel.Designer.cs">
+      <DependentUpon>DockedPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FileUpload.cs" />
+    <Compile Include="BindingManager.cs" />
+    <Compile Include="GlobalHotKey.cs" />
+    <Compile Include="HistoryItem.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="HistoryManager.cs" />
+    <Compile Include="IPC.cs" />
+    <Compile Include="Libraries\CryptoHelper.cs" />
+    <Compile Include="Libraries\GeneralHelper.cs" />
+    <Compile Include="Libraries\Icon.cs" />
+    <Compile Include="Libraries\NetLib\FormDataNetRequest.cs" />
+    <Compile Include="Libraries\pConfigManager.cs" />
+    <Compile Include="Libraries\pForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Libraries\SharpZipLib\BZip2\BZip2Constants.cs" />
+    <Compile Include="Libraries\SharpZipLib\BZip2\BZip2Exception.cs" />
+    <Compile Include="Libraries\SharpZipLib\BZip2\BZip2InputStream.cs" />
+    <Compile Include="Libraries\SharpZipLib\BZip2\BZip2OutputStream.cs" />
+    <Compile Include="Libraries\SharpZipLib\Checksums\Adler32.cs" />
+    <Compile Include="Libraries\SharpZipLib\Checksums\CRC32.cs" />
+    <Compile Include="Libraries\SharpZipLib\Checksums\IChecksum.cs" />
+    <Compile Include="Libraries\SharpZipLib\Checksums\StrangeCRC.cs" />
+    <Compile Include="Libraries\SharpZipLib\Core\FileSystemScanner.cs" />
+    <Compile Include="Libraries\SharpZipLib\Core\INameTransform.cs" />
+    <Compile Include="Libraries\SharpZipLib\Core\IScanFilter.cs" />
+    <Compile Include="Libraries\SharpZipLib\Core\NameFilter.cs" />
+    <Compile Include="Libraries\SharpZipLib\Core\PathFilter.cs" />
+    <Compile Include="Libraries\SharpZipLib\Core\StreamUtils.cs" />
+    <Compile Include="Libraries\SharpZipLib\SharpZipBaseException.cs" />
+    <Compile Include="Libraries\SharpZipLib\Zip\Compression\Deflater.cs" />
+    <Compile Include="Libraries\SharpZipLib\Zip\Compression\DeflaterConstants.cs" />
+    <Compile Include="Libraries\SharpZipLib\Zip\Compression\DeflaterEngine.cs" />
+    <Compile Include="Libraries\SharpZipLib\Zip\Compression\DeflaterHuffman.cs" />
+    <Compile Include="Libraries\SharpZipLib\Zip\Compression\DeflaterPending.cs" />
+    <Compile Include="Libraries\SharpZipLib\Zip\Compression\Inflater.cs" />
+    <Compile Include="Libraries\SharpZipLib\Zip\Compression\InflaterDynHeader.cs" />
+    <Compile Include="Libraries\SharpZipLib\Zip\Compression\InflaterHuffmanTree.cs" />
+    <Compile Include="Libraries\SharpZipLib\Zip\Compression\PendingBuffer.cs" />
+    <Compile Include="Libraries\SharpZipLib\Zip\Compression\Streams\DeflaterOutputStream.cs" />
+    <Compile Include="Libraries\SharpZipLib\Zip\Compression\Streams\InflaterInputStream.cs" />
+    <Compile Include="Libraries\SharpZipLib\Zip\Compression\Streams\OutputWindow.cs" />
+    <Compile Include="Libraries\SharpZipLib\Zip\Compression\Streams\StreamManipulator.cs" />
+    <Compile Include="Libraries\SharpZipLib\Zip\FastZip.cs" />
+    <Compile Include="Libraries\SharpZipLib\Zip\IEntryFactory.cs" />
+    <Compile Include="Libraries\SharpZipLib\Zip\ZipConstants.cs" />
+    <Compile Include="Libraries\SharpZipLib\Zip\ZipEntry.cs" />
+    <Compile Include="Libraries\SharpZipLib\Zip\ZipEntryFactory.cs" />
+    <Compile Include="Libraries\SharpZipLib\Zip\ZipException.cs" />
+    <Compile Include="Libraries\SharpZipLib\Zip\ZipExtraData.cs" />
+    <Compile Include="Libraries\SharpZipLib\Zip\ZipFile.cs" />
+    <Compile Include="Libraries\SharpZipLib\Zip\ZipHelperStream.cs" />
+    <Compile Include="Libraries\SharpZipLib\Zip\ZipInputStream.cs" />
+    <Compile Include="Libraries\SharpZipLib\Zip\ZipNameTransform.cs" />
+    <Compile Include="Libraries\SharpZipLib\Zip\ZipOutputStream.cs" />
+    <Compile Include="Libraries\TopMostMessageBox.cs" />
+    <Compile Include="QuickStart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuickStart.Designer.cs">
+      <DependentUpon>QuickStart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Settings.BindingCapture.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Settings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Settings.Designer.cs">
+      <DependentUpon>Settings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Libraries\Hooking\GlobalEventProvider.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Libraries\Hooking\HookManager.Callbacks.cs" />
+    <Compile Include="Libraries\Hooking\HookManager.cs" />
+    <Compile Include="Libraries\Hooking\HookManager.Structures.cs" />
+    <Compile Include="Libraries\Hooking\HookManager.Windows.cs" />
+    <Compile Include="Libraries\Hooking\MouseEventExtArgs.cs" />
+    <Compile Include="MainForm.Capture.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Libraries\NetLib\AsyncAcceptStatusObject.cs" />
+    <Compile Include="Libraries\NetLib\AsyncStatusObject.cs" />
+    <Compile Include="Libraries\NetLib\AuthenticationType.cs" />
+    <Compile Include="Libraries\NetLib\BinaryRequestItem.cs" />
+    <Compile Include="Libraries\NetLib\ChunkedStream.cs" />
+    <Compile Include="Libraries\NetLib\Connection.cs" />
+    <Compile Include="Libraries\NetLib\CookieItem.cs" />
+    <Compile Include="Libraries\NetLib\CookieList.cs" />
+    <Compile Include="Libraries\NetLib\DataAddedEventArgs.cs" />
+    <Compile Include="Libraries\NetLib\DataAddedEventHandler.cs" />
+    <Compile Include="Libraries\NetLib\DataNetRequest.cs" />
+    <Compile Include="Libraries\NetLib\DataStringCollection.cs" />
+    <Compile Include="Libraries\NetLib\FileNetRequest.cs" />
+    <Compile Include="Libraries\NetLib\FileUploadNetRequest.cs" />
+    <Compile Include="Libraries\NetLib\FormFieldRequestItem.cs" />
+    <Compile Include="Libraries\NetLib\FormNetRequest.cs" />
+    <Compile Include="Libraries\NetLib\GetDataStreamEventArgs.cs" />
+    <Compile Include="Libraries\NetLib\GetDataStreamEventHandler.cs" />
+    <Compile Include="Libraries\NetLib\HeaderField.cs" />
+    <Compile Include="Libraries\NetLib\HeaderFieldList.cs" />
+    <Compile Include="Libraries\NetLib\HostInfo.cs" />
+    <Compile Include="Libraries\NetLib\HostList.cs" />
+    <Compile Include="Libraries\NetLib\Http.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Libraries\NetLib\HttpEntityHeader.cs" />
+    <Compile Include="Libraries\NetLib\HttpError.cs" />
+    <Compile Include="Libraries\NetLib\HttpProxySettings.cs" />
+    <Compile Include="Libraries\NetLib\HttpRedirectEventArgs.cs" />
+    <Compile Include="Libraries\NetLib\HttpRedirectEventHandler.cs" />
+    <Compile Include="Libraries\NetLib\HttpRequest.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Libraries\NetLib\HttpRequestEventArgs.cs" />
+    <Compile Include="Libraries\NetLib\HttpRequestEventHandler.cs" />
+    <Compile Include="Libraries\NetLib\HttpRequestHeader.cs" />
+    <Compile Include="Libraries\NetLib\HttpRequestItem.cs" />
+    <Compile Include="Libraries\NetLib\HttpRequestItemList.cs" />
+    <Compile Include="Libraries\NetLib\HttpRequestUtils.cs" />
+    <Compile Include="Libraries\NetLib\HttpResponseEventArgs.cs" />
+    <Compile Include="Libraries\NetLib\HttpResponseEventHandler.cs" />
+    <Compile Include="Libraries\NetLib\HttpResponseHeader.cs" />
+    <Compile Include="Libraries\NetLib\HttpVersion.cs" />
+    <Compile Include="Libraries\NetLib\MultiStream.cs" />
+    <Compile Include="Libraries\NetLib\NetManager.cs" />
+    <Compile Include="Libraries\NetLib\NetRequest.cs" />
+    <Compile Include="Libraries\NetLib\NetworkStream.cs" />
+    <Compile Include="Libraries\NetLib\NetworkStreamAction.cs" />
+    <Compile Include="Libraries\NetLib\SetFlagsMethod.cs" />
+    <Compile Include="Libraries\NetLib\SocketError.cs" />
+    <Compile Include="Libraries\NetLib\SocketProgressEventArgs.cs" />
+    <Compile Include="Libraries\NetLib\SocketProgressEventHandler.cs" />
+    <Compile Include="Libraries\NetLib\StreamError.cs" />
+    <Compile Include="Libraries\NetLib\StreamUtils.cs" />
+    <Compile Include="Libraries\NetLib\StringCollectionEx.cs" />
+    <Compile Include="Libraries\NetLib\StringNetRequest.cs" />
+    <Compile Include="Libraries\NetLib\StringStream.cs" />
+    <Compile Include="Libraries\NetLib\StringUtils.cs" />
+    <Compile Include="Libraries\NetLib\SubmitFileRequestItem.cs" />
+    <Compile Include="Libraries\NetLib\SymbolType.cs" />
+    <Compile Include="Libraries\NetLib\SyncConnection.cs" />
+    <Compile Include="Libraries\NetLib\TcpClient.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Libraries\NetLib\TcpClientConnection.cs" />
+    <Compile Include="Libraries\NetLib\TcpListEventArgs.cs" />
+    <Compile Include="Libraries\NetLib\TcpListEventHandler.cs" />
+    <Compile Include="Libraries\NetLib\TcpTextEventArgs.cs" />
+    <Compile Include="Libraries\NetLib\TcpTextEventHandler.cs" />
+    <Compile Include="Libraries\NetLib\TextRequestItem.cs" />
+    <Compile Include="Libraries\NetLib\Translator.cs" />
+    <Compile Include="Libraries\NetLib\UrlParser.cs" />
+    <Compile Include="Libraries\NetLib\Utils.cs" />
+    <Compile Include="puush.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ScreenSelection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ScreenSelection.Designer.cs">
+      <DependentUpon>ScreenSelection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ScreenshotCapture.cs" />
+    <Compile Include="ToolStripItemThumbnail.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UpdateAvailableDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateAvailableDialog.Designer.cs">
+      <DependentUpon>UpdateAvailableDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateManager.cs" />
+    <EmbeddedResource Include="DockedPanel.resx">
+      <DependentUpon>DockedPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuickStart.resx">
+      <DependentUpon>QuickStart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Settings.resx">
+      <DependentUpon>Settings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScreenSelection.resx">
+      <DependentUpon>ScreenSelection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateAvailableDialog.resx">
+      <DependentUpon>UpdateAvailableDialog.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\puush.png" />
+    <None Include="icon-window.png" />
+    <None Include="icon-upload.png" />
+    <None Include="icon-fullscreen.png" />
+    <None Include="icon-selection.png" />
+    <Content Include="iconbundle.ico" />
+    <Content Include="Progress\complete.ico" />
+    <None Include="puush-win.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Progress\fail.ico" />
+    <Content Include="Progress\progress0.ico" />
+    <Content Include="Progress\progress10.ico" />
+    <Content Include="Progress\progress100.ico" />
+    <Content Include="Progress\progress20.ico" />
+    <Content Include="Progress\progress30.ico" />
+    <Content Include="Progress\progress40.ico" />
+    <Content Include="Progress\progress50.ico" />
+    <Content Include="Progress\progress60.ico" />
+    <Content Include="Progress\progress70.ico" />
+    <Content Include="Progress\progress80.ico" />
+    <Content Include="Progress\progress90.ico" />
+    <Content Include="Progress\tray.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

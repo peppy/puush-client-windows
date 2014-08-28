@@ -1,0 +1,226 @@
+<Configuration>
+  <CompletionStatisticsManager>
+    <ItemStatistics item="Default">
+      <Item value="puush`0" priority="5" />
+      <Item value="override" priority="1" />
+      <Item value="webBrowser1" priority="0" />
+      <Item value="Uri" priority="0" />
+      <Item value="break" priority="3" />
+      <Item value="trayIcon" priority="0" />
+      <Item value="false" priority="1" />
+      <Item value="MainForm`0" priority="4" />
+      <Item value="MessageBox`0" priority="2" />
+      <Item value="true" priority="0" />
+      <Item value="t" priority="0" />
+      <Item value="RecoveringFromError" priority="1" />
+      <Item value="new" priority="2" />
+      <Item value="Thread`0" priority="1" />
+      <Item value="OK" priority="0" />
+      <Item value="Error" priority="0" />
+      <Item value="if" priority="6" />
+      <Item value="key" priority="3" />
+      <Item value="null" priority="3" />
+      <Item value="return" priority="3" />
+      <Item value="try" priority="0" />
+      <Item value="catch" priority="0" />
+      <Item value="buttonClose" priority="0" />
+      <Item value="GlobalHotKey`0" priority="3" />
+      <Item value="Dictionary&lt;KeyBinding,GlobalHotKey&gt;" priority="0" />
+      <Item value="boundKeys" priority="3" />
+      <Item value="keyBinding" priority="3" />
+      <Item value="GlobalHotKey" priority="0" />
+      <Item value="Handle" priority="0" />
+      <Item value="MainMenu`0" priority="0" />
+      <Item value="HotkeyID" priority="0" />
+      <Item value="int" priority="2" />
+      <Item value="foreach" priority="1" />
+      <Item value="Keys`0" priority="11" />
+      <Item value="in" priority="0" />
+      <Item value="finalKeys" priority="0" />
+      <Item value="switch" priority="0" />
+      <Item value="case" priority="12" />
+      <Item value="default" priority="0" />
+      <Item value="k" priority="0" />
+      <Item value="modifiers" priority="2" />
+      <Item value="hkey" priority="1" />
+      <Item value="m" priority="0" />
+      <Item value="kvp" priority="1" />
+      <Item value="p" priority="0" />
+      <Item value="HookManager`0" priority="1" />
+      <Item value="DateTime`0" priority="0" />
+      <Item value="hotkey" priority="0" />
+      <Item value="Environment`0" priority="0" />
+      <Item value="KeyBinding`0" priority="1" />
+      <Item value="internal" priority="0" />
+      <Item value="static" priority="0" />
+      <Item value="invokeMeSome`0" priority="0" />
+      <Item value="else" priority="0" />
+      <Item value="buttonToggleBinding" priority="0" />
+      <Item value="selectionMode" priority="0" />
+      <Item value="selectionForm" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@puush.puush">
+      <Item value="getPuushUrl`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.WebBrowser">
+      <Item value="Url" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.NotifyIcon">
+      <Item value="Visible" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@puush.MainForm">
+      <Item value="invokeMeSome`0" priority="0" />
+      <Item value="Instance" priority="3" />
+      <Item value="threadMeSome`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Windows.Forms.MessageBox">
+      <Item value="Show`0" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Threading.Thread">
+      <Item value="IsBackground" priority="0" />
+      <Item value="ThreadState" priority="0" />
+      <Item value="Start`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:puush.MainForm">
+      <Item value="Close`0" priority="0" />
+      <Item value="Handle" priority="1" />
+      <Item value="toolStripMenuItemUploadDisabled" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Threading.Thread">
+      <Item value="Sleep`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.Button">
+      <Item value="Select`0" priority="0" />
+      <Item value="Text" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.Dictionary`2">
+      <Item value="ContainsKey`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:GlobalHotKey">
+      <Item value="Dispose`0" priority="0" />
+      <Item value="RegisterGlobalHotKey`0" priority="0" />
+      <Item value="HotkeyID" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Windows.Forms.Keys">
+      <Item value="ShiftKey" priority="0" />
+      <Item value="Alt" priority="0" />
+      <Item value="Shift" priority="0" />
+      <Item value="Control" priority="0" />
+      <Item value="LWin" priority="0" />
+      <Item value="RWin" priority="0" />
+      <Item value="LControlKey" priority="0" />
+      <Item value="RControlKey" priority="0" />
+      <Item value="LShiftKey" priority="0" />
+      <Item value="RShiftKey" priority="0" />
+      <Item value="LMenu" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@GlobalHotKey">
+      <Item value="MOD_SHIFT" priority="0" />
+      <Item value="MOD_ALT" priority="0" />
+      <Item value="MOD_CONTROL" priority="0" />
+      <Item value="MOD_WIN" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@puush.BindingManager">
+      <Item value="Check`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.Message">
+      <Item value="WParam" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.KeyValuePair`2">
+      <Item value="Value" priority="0" />
+      <Item value="Key" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Gma.UserActivityMonitor.HookManager">
+      <Item value="KeyDown" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.DateTime">
+      <Item value="Now" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Environment">
+      <Item value="CommandLine" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@puush.KeyBinding">
+      <Item value="Toggle" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:puush.ScreenSelection">
+      <Item value="Dispose`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:puush.Settings">
+      <Item value="Dispose`0" priority="0" />
+    </ItemStatistics>
+  </CompletionStatisticsManager>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="DAB92AE6-F7B2-4598-BF99-CB825B579EB3/f:Settings.Designer.cs" caret="38738" fromTop="45" />
+      <File id="DAB92AE6-F7B2-4598-BF99-CB825B579EB3/f:puush-win.txt" caret="0" fromTop="0" />
+      <File id="DAB92AE6-F7B2-4598-BF99-CB825B579EB3/d:Libraries/d:NetLib/f:Http.cs" caret="40225" fromTop="25" />
+      <File id="DAB92AE6-F7B2-4598-BF99-CB825B579EB3/d:Libraries/d:NetLib/f:NetManager.cs" caret="2292" fromTop="43" />
+      <File id="DAB92AE6-F7B2-4598-BF99-CB825B579EB3/d:Libraries/d:NetLib/f:FormNetRequest.cs" caret="1424" fromTop="39" />
+      <File id="DAB92AE6-F7B2-4598-BF99-CB825B579EB3/d:Libraries/d:NetLib/f:HttpRequestItem.cs" caret="2052" fromTop="36" />
+      <File id="DAB92AE6-F7B2-4598-BF99-CB825B579EB3/f:QuickStart.cs" caret="3371" fromTop="46" />
+      <File id="DAB92AE6-F7B2-4598-BF99-CB825B579EB3/d:Libraries/d:NetLib/f:SyncConnection.cs" caret="6488" fromTop="25" />
+      <File id="DAB92AE6-F7B2-4598-BF99-CB825B579EB3/d:Libraries/f:pForm.cs" caret="1656" fromTop="25" />
+      <File id="DAB92AE6-F7B2-4598-BF99-CB825B579EB3/f:FileUpload.cs" caret="5669" fromTop="26" />
+      <File id="DAB92AE6-F7B2-4598-BF99-CB825B579EB3/d:Libraries/d:NetLib/f:Connection.cs" caret="4331" fromTop="36" />
+      <File id="DAB92AE6-F7B2-4598-BF99-CB825B579EB3/d:Libraries/f:Icon.cs" caret="13069" fromTop="19" />
+      <File id="DAB92AE6-F7B2-4598-BF99-CB825B579EB3/f:GlobalHotKey.cs" caret="2599" fromTop="40" />
+      <File id="DAB92AE6-F7B2-4598-BF99-CB825B579EB3/d:Libraries/d:NetLib/f:TcpClient.cs" caret="777" fromTop="22" />
+      <File id="DAB92AE6-F7B2-4598-BF99-CB825B579EB3/d:Libraries/d:SharpZipLib/d:BZip2/f:BZip2Constants.cs" caret="3838" fromTop="61" />
+      <File id="DAB92AE6-F7B2-4598-BF99-CB825B579EB3/f:HistoryManager.cs" caret="402" fromTop="15" />
+      <File id="DAB92AE6-F7B2-4598-BF99-CB825B579EB3/f:HistoryItem.cs" caret="1324" fromTop="37" />
+      <File id="DAB92AE6-F7B2-4598-BF99-CB825B579EB3/f:ScreenSelection.cs" caret="642" fromTop="28" />
+      <File id="DAB92AE6-F7B2-4598-BF99-CB825B579EB3/f:MainForm.Capture.cs" caret="528" fromTop="20" />
+      <File id="DAB92AE6-F7B2-4598-BF99-CB825B579EB3/f:Settings.BindingCapture.cs" caret="369" fromTop="15" />
+      <File id="DAB92AE6-F7B2-4598-BF99-CB825B579EB3/f:Settings.cs" caret="1093" fromTop="26" />
+      <File id="DAB92AE6-F7B2-4598-BF99-CB825B579EB3/f:MainForm.cs" caret="11076" fromTop="10" />
+      <File id="DAB92AE6-F7B2-4598-BF99-CB825B579EB3/f:puush.cs" caret="1088" fromTop="21" />
+      <File id="DAB92AE6-F7B2-4598-BF99-CB825B579EB3/f:BindingManager.cs" caret="2145" fromTop="54" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="DAB92AE6-F7B2-4598-BF99-CB825B579EB3/f:puush.cs" caret="13287" fromTop="49" />
+      <File id="DAB92AE6-F7B2-4598-BF99-CB825B579EB3/f:puush.cs" caret="13287" fromTop="45" />
+      <File id="DAB92AE6-F7B2-4598-BF99-CB825B579EB3/f:puush.cs" caret="13287" fromTop="26" />
+      <File id="DAB92AE6-F7B2-4598-BF99-CB825B579EB3/f:puush.cs" caret="334" fromTop="12" />
+      <File id="DAB92AE6-F7B2-4598-BF99-CB825B579EB3/f:puush.cs" caret="1456" fromTop="52" />
+      <File id="DAB92AE6-F7B2-4598-BF99-CB825B579EB3/f:HistoryManager.cs" caret="3263" fromTop="15" />
+      <File id="DAB92AE6-F7B2-4598-BF99-CB825B579EB3/f:Settings.cs" caret="12908" fromTop="33" />
+      <File id="DAB92AE6-F7B2-4598-BF99-CB825B579EB3/f:BindingManager.cs" caret="1413" fromTop="32" />
+      <File id="DAB92AE6-F7B2-4598-BF99-CB825B579EB3/f:BindingManager.cs" caret="8778" fromTop="37" />
+      <File id="DAB92AE6-F7B2-4598-BF99-CB825B579EB3/f:BindingManager.cs" caret="4221" fromTop="37" />
+      <File id="DAB92AE6-F7B2-4598-BF99-CB825B579EB3/f:MainForm.cs" caret="972" fromTop="27" />
+      <File id="DAB92AE6-F7B2-4598-BF99-CB825B579EB3/f:MainForm.cs" caret="7661" fromTop="58" />
+      <File id="DAB92AE6-F7B2-4598-BF99-CB825B579EB3/f:MainForm.cs" caret="6432" fromTop="50" />
+      <File id="DAB92AE6-F7B2-4598-BF99-CB825B579EB3/f:MainForm.cs" caret="15476" fromTop="40" />
+      <File id="DAB92AE6-F7B2-4598-BF99-CB825B579EB3/f:MainForm.cs" caret="14506" fromTop="41" />
+      <File id="DAB92AE6-F7B2-4598-BF99-CB825B579EB3/f:MainForm.cs" caret="14876" fromTop="47" />
+      <File id="DAB92AE6-F7B2-4598-BF99-CB825B579EB3/f:MainForm.cs" caret="15239" fromTop="53" />
+      <File id="DAB92AE6-F7B2-4598-BF99-CB825B579EB3/f:MainForm.cs" caret="13991" fromTop="33" />
+      <File id="DAB92AE6-F7B2-4598-BF99-CB825B579EB3/f:MainForm.cs" caret="7625" fromTop="45" />
+      <File id="DAB92AE6-F7B2-4598-BF99-CB825B579EB3/f:MainForm.cs" caret="7099" fromTop="37" />
+      <File id="DAB92AE6-F7B2-4598-BF99-CB825B579EB3/f:MainForm.cs" caret="7554" fromTop="44" />
+      <File id="DAB92AE6-F7B2-4598-BF99-CB825B579EB3/f:Settings.cs" caret="4432" fromTop="43" />
+      <File id="DAB92AE6-F7B2-4598-BF99-CB825B579EB3/f:MainForm.Capture.cs" caret="1634" fromTop="34" />
+      <File id="DAB92AE6-F7B2-4598-BF99-CB825B579EB3/f:MainForm.Capture.cs" caret="996" fromTop="34" />
+      <File id="DAB92AE6-F7B2-4598-BF99-CB825B579EB3/f:Settings.cs" caret="1362" fromTop="36" />
+      <File id="DAB92AE6-F7B2-4598-BF99-CB825B579EB3/f:Settings.cs" caret="1579" fromTop="44" />
+      <File id="DAB92AE6-F7B2-4598-BF99-CB825B579EB3/f:Settings.cs" caret="793" fromTop="15" />
+      <File id="DAB92AE6-F7B2-4598-BF99-CB825B579EB3/f:MainForm.cs" caret="11719" fromTop="32" />
+      <File id="DAB92AE6-F7B2-4598-BF99-CB825B579EB3/f:puush.cs" caret="517" fromTop="21" />
+      <File id="DAB92AE6-F7B2-4598-BF99-CB825B579EB3/f:puush.cs" caret="1088" fromTop="21" />
+    </RecentEdits>
+  </RecentFiles>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <UnitTestRunner>
+    <Providers />
+  </UnitTestRunner>
+  <UnitTestRunnerNUnit>
+    <NUnitInstallDir IsNull="False">
+    </NUnitInstallDir>
+    <UseAddins>Never</UseAddins>
+  </UnitTestRunnerNUnit>
+  <Bookmarks>
+    <Bookmark owner="NumberedBookmarkManager" id="Bookmark2" file-id="DAB92AE6-F7B2-4598-BF99-CB825B579EB3/f:puush.cs" coords="(Doc Ln 15 Col 15)" />
+  </Bookmarks>
+</Configuration>

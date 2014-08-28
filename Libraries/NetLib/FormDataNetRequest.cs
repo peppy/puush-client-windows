@@ -1,0 +1,106 @@
+using System;
+using System.IO;
+
+namespace osu_common.Libraries.NetLib
+{
+    /// <summary>
+    /// POSTs a byte buffer to a url
+    /// </summary>
+    public class FormDataNetRequest : NetRequest
+    {
+        private readonly byte[] m_buffer;
+        private readonly string m_filename;
+        private readonly string m_labelname;
+        private Http http;
+
+        public FormDataNetRequest(string _url)
+            : base(_url)
+        {
+            BufferSize = 8192; //default buffer size is 8kb
+            
+            http = new Http();
+            request = new HttpRequest();
+            http.Request = request;
+        }
+
+        public void AddField(string key, string val)
+        {
+            request.Items.AddFormField(key,val);
+        }
+
+        public int BufferSize { get; set; }
+
+        public event RequestStartHandler onStart;
+        public event RequestUpdateHandler onUpdate;
+        public event RequestCompleteHandler onFinish;
+        public HttpRequest request;
+
+        public override void Perform()
+        {
+            BlockingPerform();
+        }
+
+        public byte[] BlockingPerform()
+        {
+            //inform subscribers that we have started
+            if (onStart != null)
+                onStart();
+
+            MemoryStream res = new MemoryStream();
+            try
+            {
+
+                http.SendProgress += http_SendProgress;
+                http.Post(m_url, request, res);
+                http.SendProgress -= http_SendProgress;
+            }
+            catch
+            {
+            }
+
+            http.Close();
+
+            byte[] response = res.ToArray();
+
+            if (onFinish != null)
+                onFinish(response, null);
+
+            return response;
+        }
+
+        private void http_SendProgress(object sender, SocketProgressEventArgs e)
+        {
+            if (onUpdate != null)
+                onUpdate(this, e.BytesProceed, e.TotalBytes);
+        }
+
+        public override bool Valid()
+        {
+            return true;
+        }
+
+        public override void OnException(Exception e)
+        {
+            if (onFinish != null)
+                onFinish(null, e);
+        }
+
+        public void Close()
+        {
+            if (http != null)
+                http.Close();
+        }
+
+        #region Nested type: CreatePostHeader
+
+        public delegate string CreatePostHeader();
+
+        #endregion
+
+        #region Nested type: RequestCompleteHandler
+
+        public delegate void RequestCompleteHandler(byte[] data, Exception e);
+
+        #endregion
+    }
+}
