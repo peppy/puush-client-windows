@@ -494,7 +494,13 @@ namespace puush
                     wasSuccessful = openFileDialog1.ShowDialog(this) == DialogResult.OK && !string.IsNullOrEmpty(openFileDialog1.FileName);
                 });
 
-            if (wasSuccessful) FileUpload.Upload(openFileDialog1.FileName);
+            if (wasSuccessful)
+            {
+                foreach (String file in openFileDialog1.FileNames)
+                {
+                    FileUpload.Upload(file);
+                }
+            }
 
             //topmostForm.Dispose();
             uploadFileDialogVisible = false;

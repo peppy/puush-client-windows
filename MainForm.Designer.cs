@@ -198,6 +198,11 @@ namespace puush
             this.trayIcon.MouseClick += new System.Windows.Forms.MouseEventHandler(this.trayIcon_MouseClick);
             this.trayIcon.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.trayIcon_MouseDoubleClick);
             // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.Multiselect = true;
+            this.openFileDialog1.Title = "Upload File";
+            // 
             // trayResetTimer
             // 
             this.trayResetTimer.Interval = 2000;
