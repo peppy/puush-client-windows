@@ -419,7 +419,7 @@ namespace puush
             }
             else
             {
-                puush.ShowErrorBalloon("Clipboard contents is in an unsupported format.");
+                puush.ShowErrorBalloon("Clipboard contents are in an unsupported format.");
             }
         }
 
